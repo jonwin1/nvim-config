@@ -22,33 +22,39 @@ require("lazy").setup({
         opts = {}
     },
     {
-        'nvim-telescope/telescope.nvim', tag = '0.1.3',
-        dependencies = { 'nvim-lua/plenary.nvim' }
+        "nvim-telescope/telescope.nvim", tag = "0.1.3",
+        dependencies = { "nvim-lua/plenary.nvim" }
     },
     { 
-        'rose-pine/neovim', 
-        name = 'rose-pine',
+        "rose-pine/neovim", 
+        name = "rose-pine",
         config = function()
-            vim.cmd('colorscheme rose-pine')
+            vim.cmd("colorscheme rose-pine")
         end
     },
     { "nvim-treesitter/nvim-treesitter", build = ":TSUpdate"},
-    { "theprimeagen/harpoon", dependencies = { 'nvim-lua/plenary.nvim' } },
+    { "theprimeagen/harpoon", dependencies = { "nvim-lua/plenary.nvim" } },
     { "mbbill/undotree" },
     { "tpope/vim-fugitive" },
 
-    { 'williamboman/mason.nvim' },
-    { 'williamboman/mason-lspconfig.nvim' },
-    { 'VonHeikemen/lsp-zero.nvim', branch = 'v3.x' },
-    { 'neovim/nvim-lspconfig' },
-    { 'hrsh7th/cmp-nvim-lsp' },
-    { 'hrsh7th/nvim-cmp' },
-    { 'L3MON4D3/LuaSnip' },
+    { "williamboman/mason.nvim" },
+    { "williamboman/mason-lspconfig.nvim" },
+    { "VonHeikemen/lsp-zero.nvim", branch = "v3.x" },
+    { "neovim/nvim-lspconfig" },
+    { "hrsh7th/cmp-nvim-lsp" },
+    { "hrsh7th/nvim-cmp" },
+    { "L3MON4D3/LuaSnip" },
 
     {
-        'max397574/better-escape.nvim',
+        "max397574/better-escape.nvim",
         config = function()
-            require('better_escape').setup()
+            require("better_escape").setup()
+        end,
+    },
+    {
+        "m4xshen/autoclose.nvim",
+        config = function()
+            require("autoclose").setup()
         end,
     },
 })
