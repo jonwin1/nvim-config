@@ -44,17 +44,4 @@ require("lazy").setup({
     { "hrsh7th/cmp-nvim-lsp" },
     { "hrsh7th/nvim-cmp" },
     { "L3MON4D3/LuaSnip" },
-
-    {
-        "max397574/better-escape.nvim",
-        config = function()
-            require("better_escape").setup()
-        end,
-    },
-    {
-        "m4xshen/autoclose.nvim",
-        config = function()
-            require("autoclose").setup()
-        end,
-    },
 })
