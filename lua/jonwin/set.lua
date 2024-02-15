@@ -9,6 +9,7 @@ vim.opt.expandtab = true
 vim.opt.smartindent = true
 
 vim.opt.wrap = false
+vim.cmd[[autocmd FileType tex set wrap]]
 
 vim.opt.swapfile = false
 vim.opt.backup = false
