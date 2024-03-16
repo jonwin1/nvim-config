@@ -13,7 +13,7 @@ vim.keymap.set("n", "<right>", '<cmd>echo "Use l to move!!"<CR>', { desc = "whic
 vim.keymap.set("n", "<up>", '<cmd>echo "Use k to move!!"<CR>', { desc = "which_key_ignore" })
 vim.keymap.set("n", "<down>", '<cmd>echo "Use j to move!!"<CR>', { desc = "which_key_ignore" })
 
-vim.keymap.set("n", "<leader>pv", vim.cmd.Ex, { desc = "netrw" })
+vim.keymap.set("n", "<leader>n", vim.cmd.Ex, { desc = "[N]etrw" })
 
 vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv", { desc = "Move selection [J]" })
 vim.keymap.set("v", "K", ":m '<-2<CR>gv=gv", { desc = "Move selection [K]" })
